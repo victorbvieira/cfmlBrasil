@@ -9,6 +9,7 @@
 		<cfset parts = sql.split("(?m)^GO")>
 
 	</cfif>
+	<cfset session.dsn = "dsn_cfmlbrasil">
 	<cfloop index="x" from="1" to="#arrayLen(parts)#">
 		<cfset sql = trim(parts[x])>
 		<cfif len(sql)>

@@ -1,0 +1,18 @@
+{
+    "web": {
+        "rewrites": {
+            "enable": "true"
+        }
+    },
+    "JVM": {
+        "heapSize": "768"
+    },
+    "trayicon": "modules_app/contentbox-custom/_content/ContentBox_300.png",
+    "trayOptions": [{
+        "label": "Open ContentBox Admin",
+        "action": "openbrowser",
+        "url": "http://\\${runwar.host}:\\${runwar.port}/cbadmin",
+        "disabled": false,
+        "image": "modules_app/contentbox-custom/_content/ContentBox-Circle_32.png"
+    }]
+}

@@ -1,0 +1,1314 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ForgeBox</title>
+	<meta name="keywords" content="forgeboxsdk.concurrent.Callable interface">
+	<!-- common assets -->
+	
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../highlighter/styles/shCoreDefault.css">
+	<script src="../highlighter/scripts/shCore.js"></script>
+	<script src="../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>forgeboxsdk v1.1.0</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					
+					<li><a href="../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+				
+
+				
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+
+			  	
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../index.html?forgeboxsdk/ForgeBox.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: forgeboxsdk"><span class="label label-success">forgeboxsdk</span></a>
+</div>
+
+<h2>
+
+
+Class
+
+ ForgeBox</h2>
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+	
+		
+		
+			
+		
+	
+	
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">lucee.Component
+    <img src="../resources/inherit.gif" alt="extended by ">forgeboxsdk.ForgeBox
+</pre>
+
+
+
+	
+	
+
+
+
+
+
+
+
+<div id="class-hint">
+	<p>Copyright since 2012 by Ortus Solutions, Corp
+www.ortussolutions.com
+---</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				synchronized
+				
+				: false
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				accessors
+				
+				: true
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				persistent
+				
+				: false
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+		
+		
+	</div>
+</div>
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#endpointURL()">endpointURL</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ForgeBox Endpoint URL.
+			
+			<br><br>
+			<ul>
+			
+				
+			
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			
+				
+			
+				
+			
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#version()">version</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ForgeBox API version to use.
+			
+			<br><br>
+			<ul>
+			
+				
+			
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			
+				
+			
+				
+			
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>1</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+
+
+	
+	
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="ForgeBox.html#init()">init</A></strong>([any endpointURL='https://www.forgebox.io'], [any version='v1'])
+				<br>
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Constructor.
+				
+			</td>
+		</tr>
+	</table>
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getAPIURL()">getAPIURL</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the API URL according to properties: ex: https://www.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getEndpointURL()">getEndpointURL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getEntries()">getEntries</A></strong>([any orderBy='[runtime expression]'], [numeric maxrows='0'], [numeric startRow='1'], [any typeslug=''], [any searchTerm=''])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get entries.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getEntry()">getEntry</A></strong>(any slug)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a single entry data.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getLatestVersion()">getLatestVersion</A></strong>(any slug)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get an entry's latest version.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getType()">getType</A></strong>(any slug)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a type representation.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getTypes()">getTypes</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the entry types as array of structs.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#getVersion()">getVersion</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#isSlugAvailable()">isSlugAvailable</A></strong>(any slug)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if a slug is available.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;struct</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#makeRequest()">makeRequest</A></strong>([string method='GET'], string resource, [any body=''], [struct headers='[runtime expression]'], [struct parameters='[runtime expression]'], [numeric timeout='15'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make a ForgeBox REST Call.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#ping()">ping</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pings the API to see if its alive.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#setEndpointURL()">setEndpointURL</A></strong>(any endpointURL)
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="ForgeBox.html#setVersion()">setVersion</A></strong>(any version)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	
+
+	
+
+	&nbsp;
+	<a name="methods_inherited_from_class_lucee.Component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>lucee.Component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+				
+				
+
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([any endpointURL='https://www.forgebox.io'], [any version='v1'])</kbd>
+
+	<br><br>
+
+	
+	<p>Constructor</p>
+	
+
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>endpointURL</code> - Override the Forgebox Endpoint URL</dd>
+		
+			<dd><code>version</code> - Override the version to use, defaults to latest: v1</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		
+		<a name="endpointURL()"><!-- --></a>
+		<h3>endpointURL</h3>
+
+		<kbd>
+			property any
+			<strong>endpointURL</strong>
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The ForgeBox Endpoint URL</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			
+		
+			
+			<dd><code>access</code> - public</dd>
+			
+		
+			
+			<dd><code>required</code> - false</dd>
+			
+		
+			
+		
+			
+			<dd><code>returntype</code> - any</dd>
+			
+		
+			
+		
+			
+		
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		
+		</dl>
+
+		<hr>
+	
+		
+		<a name="version()"><!-- --></a>
+		<h3>version</h3>
+
+		<kbd>
+			property any
+			<strong>version</strong>
+			
+			= [1]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The ForgeBox API version to use</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			
+		
+			
+			<dd><code>access</code> - public</dd>
+			
+		
+			
+			<dd><code>required</code> - false</dd>
+			
+		
+			
+		
+			
+			<dd><code>returntype</code> - any</dd>
+			
+		
+			
+		
+			
+		
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		
+		</dl>
+
+		<hr>
+	
+
+
+
+
+
+
+
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	
+	<a name="getAPIURL()"><!-- --></a>
+	<h3>
+		getAPIURL
+		
+	</h3>
+
+	<kbd>public any <strong>getAPIURL</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Gets the API URL according to properties: ex: https://www.forgebox.io/api/v1</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getEndpointURL()"><!-- --></a>
+	<h3>
+		getEndpointURL
+		
+	</h3>
+
+	<kbd>public string <strong>getEndpointURL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getEntries()"><!-- --></a>
+	<h3>
+		getEntries
+		
+	</h3>
+
+	<kbd>public struct <strong>getEntries</strong>([any orderBy='[runtime expression]'], [numeric maxrows='0'], [numeric startRow='1'], [any typeslug=''], [any searchTerm=''])</kbd>
+
+	<br><br>
+
+	
+		<p>Get entries</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>orderBy</code> - The sort ordering, look at this.ORDER</dd>
+		
+		<dd><code>maxrows</code> - Used for pagination</dd>
+		
+		<dd><code>startRow</code> - Used for pagination</dd>
+		
+		<dd><code>typeslug</code> - Filter by type</dd>
+		
+		<dd><code>searchTerm</code> - Search by string</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getEntry()"><!-- --></a>
+	<h3>
+		getEntry
+		
+	</h3>
+
+	<kbd>public struct <strong>getEntry</strong>(any slug)</kbd>
+
+	<br><br>
+
+	
+		<p>Get a single entry data</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>slug</code> - The slug to retrieve</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getLatestVersion()"><!-- --></a>
+	<h3>
+		getLatestVersion
+		
+	</h3>
+
+	<kbd>public struct <strong>getLatestVersion</strong>(any slug)</kbd>
+
+	<br><br>
+
+	
+		<p>Get an entry's latest version</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>slug</code> - The slug to retrieve</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getType()"><!-- --></a>
+	<h3>
+		getType
+		
+	</h3>
+
+	<kbd>public struct <strong>getType</strong>(any slug)</kbd>
+
+	<br><br>
+
+	
+		<p>Get a type representation</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>slug</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getTypes()"><!-- --></a>
+	<h3>
+		getTypes
+		
+	</h3>
+
+	<kbd>public array <strong>getTypes</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Get the entry types as array of structs</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getVersion()"><!-- --></a>
+	<h3>
+		getVersion
+		
+	</h3>
+
+	<kbd>public string <strong>getVersion</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="isSlugAvailable()"><!-- --></a>
+	<h3>
+		isSlugAvailable
+		
+	</h3>
+
+	<kbd>public boolean <strong>isSlugAvailable</strong>(any slug)</kbd>
+
+	<br><br>
+
+	
+		<p>Check if a slug is available</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>slug</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="makeRequest()"><!-- --></a>
+	<h3>
+		makeRequest
+		
+	</h3>
+
+	<kbd>private struct <strong>makeRequest</strong>([string method='GET'], string resource, [any body=''], [struct headers='[runtime expression]'], [struct parameters='[runtime expression]'], [numeric timeout='15'])</kbd>
+
+	<br><br>
+
+	
+		<p>Make a ForgeBox REST Call</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>method</code> - The HTTP method call</dd>
+		
+		<dd><code>resource</code> - The resource to call</dd>
+		
+		<dd><code>body</code> - The body contents of the request</dd>
+		
+		<dd><code>headers</code> - Request headers</dd>
+		
+		<dd><code>parameters</code></dd>
+		
+		<dd><code>timeout</code> - Request Timeout</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="ping()"><!-- --></a>
+	<h3>
+		ping
+		
+	</h3>
+
+	<kbd>public string <strong>ping</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Pings the API to see if its alive</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="setEndpointURL()"><!-- --></a>
+	<h3>
+		setEndpointURL
+		
+	</h3>
+
+	<kbd>public any <strong>setEndpointURL</strong>(any endpointURL)</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>endpointURL</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="setVersion()"><!-- --></a>
+	<h3>
+		setVersion
+		
+	</h3>
+
+	<kbd>public any <strong>setVersion</strong>(any version)</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>version</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+
+
+
+</body>
+</html>
+
